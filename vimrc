@@ -20,8 +20,10 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'bling/vim-airline'
-Bundle 'joonty/vim-phpqa.git'
+Bundle 'joonty/vim-phpunitqf'
+Bundle 'kien/ctrlp.vim'
 
+Bundle 'joonty/vim-phpqa.git'
 let g:Powerline_symbols = 'fancy'
 let NERDTreeShowHidden=1
 let g:airline#extensions#tabline#enabled = 1
