@@ -19,11 +19,14 @@ Bundle 'tpope/vim-rails.git'
 Bundle 'scrooloose/nerdtree'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'Lokaltog/vim-powerline'
+Bundle 'bling/vim-airline'
+Bundle 'joonty/vim-phpqa.git'
 
 let g:Powerline_symbols = 'fancy'
 let NERDTreeShowHidden=1
-
+let g:airline#extensions#tabline#enabled = 1
+let g:phpqa_codesniffer_args = "--standard=PSR2"
+let g:phpqa_messdetector_autorun = 0
 
 " vim-scripts repos
 Bundle 'L9'
