@@ -24,6 +24,10 @@ alias adminer="cd /etc/adminer; php -S localhost:8070 > /dev/null &; google-chro
 alias clip="tmux show-buffer | xclip -selection clipboard -i"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+alias web01='ssh jump-t ssh -p 26 189.125.46.56 -t ssh -p 26 web01'
+alias web02='ssh jump -t ssh -p 26 189.125.46.56 -t ssh -p 26 web02'
+alias db01='ssh jump -t ssh -p 26 189.125.46.56 -t ssh -p 26 db01'
+alias db02='ssh jump -t ssh -p 26 189.125.46.56'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
