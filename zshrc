@@ -24,8 +24,13 @@ alias adminer="cd /etc/adminer; php -S localhost:8070 > /dev/null &; google-chro
 alias clip="tmux show-buffer | xclip -selection clipboard -i"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
+alias gitroot='cd "$(git rev-parse --show-toplevel)"'
+alias monitor='ssh root@monitor mb-monitor queues'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
+
+# Load ssh keys to forward agent
+ssh-add ~/.ssh/westwing/id_rsa > /dev/null
 
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -48,3 +53,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/agostinho/.local/bin:/home/agostinho/bin
+
+
+autoload predict-on
