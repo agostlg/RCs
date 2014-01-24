@@ -1,6 +1,10 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+#Default editor
+export EDITOR='vim'
+
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -25,12 +29,12 @@ alias clip="tmux show-buffer | xclip -selection clipboard -i"
 alias pbcopy='xsel --clipboard --input'
 alias pbpaste='xsel --clipboard --output'
 alias gitroot='cd "$(git rev-parse --show-toplevel)"'
-alias monitor='ssh root@monitor mb-monitor queues'
+alias monitor='ssh root@monitor watch mb-monitor -t 0 queues'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
 
 # Load ssh keys to forward agent
-ssh-add ~/.ssh/westwing/id_rsa > /dev/null
+#ssh-add ~/.ssh/westwing/id_rsa > /dev/null
 
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
