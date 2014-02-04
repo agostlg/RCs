@@ -1,6 +1,10 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
+#Default editor
+export EDITOR='vim'
+
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -28,8 +32,13 @@ alias web01='ssh jump-t ssh -p 26 189.125.46.56 -t ssh -p 26 web01'
 alias web02='ssh jump -t ssh -p 26 189.125.46.56 -t ssh -p 26 web02'
 alias db01='ssh jump -t ssh -p 26 189.125.46.56 -t ssh -p 26 db01'
 alias db02='ssh jump -t ssh -p 26 189.125.46.56'
+alias gitroot='cd "$(git rev-parse --show-toplevel)"'
+alias monitor='ssh root@monitor watch mb-monitor -t 0 queues'
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
+
+# Load ssh keys to forward agent
+#ssh-add ~/.ssh/westwing/id_rsa > /dev/null
 
 # Comment this out to disable weekly auto-update checks
 # DISABLE_AUTO_UPDATE="true"
@@ -52,3 +61,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/home/agostinho/.local/bin:/home/agostinho/bin
+
+
+autoload predict-on
